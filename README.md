@@ -2,7 +2,7 @@
 
 
 
-![Drag Racing](yakoue-vuejs1.png)
+![Drag Racing](yakoue-reactjs2.png)
 
 ## Install
 
