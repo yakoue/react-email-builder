@@ -83,7 +83,7 @@ var _default = function (_Component) {
     };
 
     _this.instanceId = "yakoue-instance";
-    _this.instanceUrl = "http://localhost/iframe/embed.js"; // "https://editor.yakoue.com/embed.js";
+    _this.instanceUrl = "https://editor.yakoue.com/embed.js"; // "http://localhost/iframe/embed.js"; //
     return _this;
   }
 

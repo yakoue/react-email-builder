@@ -8,7 +8,7 @@ export default class extends Component {
     super(props);
 
     this.instanceId = `yakoue-instance`;
-    this.instanceUrl = "http://localhost/iframe/embed.js"; // "https://editor.yakoue.com/embed.js";
+    this.instanceUrl = "https://editor.yakoue.com/embed.js"; // "http://localhost/iframe/embed.js"; //
   }
 
   componentDidMount() {

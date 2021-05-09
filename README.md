@@ -81,8 +81,11 @@ render(<App />, document.getElementById('app'))
 ## Properties
 
 **template** _object_ or _string_ You can set MJML Json on MJML XML as string to this props
+
 **config** _object_ You can use this props to config and customize the builder
+
 **onLoad** _function callback_ You can use this to set call back function on builder load
+
 ### Configuration Options
 ---
 | Attribute                           | Required |                                                                                                                 |
