@@ -66,11 +66,6 @@ export default class extends Component {
       }
     }
   };
-
-  registerCallback = (type, callback) => {
-    this.instance.registerCallback(type, callback);
-  };
-
   addEvent = (type, callback) => {
     this.instance.addEvent(type, callback);
   };
