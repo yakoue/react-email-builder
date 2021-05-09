@@ -19,10 +19,7 @@
     "test:watch": "nwb test-react --server",
     "release": "npm run build && npm publish --access public"
   },
-  "dependencies": {
-    "bootstrap": "^5.0.0",
-    "react-bootstrap": "^1.5.2"
-  },
+ 
   "peerDependencies": {
     "load-script": "^1.0.0",
     "react": "15.x || 16.x"
@@ -32,9 +29,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "bootstrap": "^5.0.0",
+    "react-bootstrap": "^1.5.2"
   },
-  "author": "",
+  "author":{"name":"Yakoue", "contact":"contact@yakoue.com"},
   "homepage": "https://github.com/yakoue/react-email-builder#readme",
   "license": "MIT",
   "repository": "https://github.com/yakoue/react-email-builder.git",

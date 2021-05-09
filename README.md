@@ -1,5 +1,9 @@
 # Yakoue Email Editor
 
+
+
+![Drag Racing](yakoue-vuejs1.png)
+
 ## Install
 
 ### CDN
@@ -61,4 +65,4 @@ render(<App />, document.getElementById('app'))
 
 ### Customize configuration
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Configuration Reference](https://docs.yakoue.com/plugins/).

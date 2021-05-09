@@ -49,7 +49,7 @@ const Example = (props) => {
   };
 
   return (
-    <Container style={{ paddingLeft: 20, paddingRight: 20 }}>
+    <Container style={{ paddingLeft: 20, paddingRight: 20, paddingTop: 5 }}>
       <Row>
         <Col xs={8}>
           {" "}
