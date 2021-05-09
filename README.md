@@ -70,7 +70,7 @@ const App = (props) => {
 
 render(<App />, document.getElementById('app'))
 ```
-# Methods
+## Methods
 
 | Method  | Param  | description |
 | -------------------------|------------------------|----------------------------|
@@ -79,9 +79,9 @@ render(<App />, document.getElementById('app'))
 | **saveTemplate** | Function callback | Returns the design JSON  and HTML in a callback function|
 | **exportHtml**   | Function callback  | Returns the design HTML in a callback function |
 
-# Config
+## Config
 
-**config** _object_ You can use this props to config and customize the builder---
+**config** _object_ You can use this props to config and customize the builder
 
 ### Configuration Options
 ---
@@ -98,7 +98,6 @@ render(<App />, document.getElementById('app'))
 | **editor** <br/>_object_            | No       | These are some editor options for different functions of the editor. Learn more                                 |
 | **fonts** <br/>_object_             | No       | You can pass custom fonts here. Learn More                                                                      |
 | **toolsDefaultValues**<br/>_object_ | No       | You can pass default tools properties here.                                                                     |
-| **loadSctratch** <br/>_boolean_     | No       | Custom JavaScript URL or source. Learn more                                                                     |
 | **callbacks** <br/>_array_          | No       | Array of callbacks functions                                                                                    |
 
 
