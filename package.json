@@ -1,6 +1,6 @@
 {
   "name": "@yakoue/react-email-builder",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Yakoue's MJML Drag & Drop email builder component for Reactjs",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -38,6 +38,6 @@
   "license": "MIT",
   "repository": "https://github.com/yakoue/react-email-builder.git",
   "keywords": [
-    "react-component"
+    "react","drag-and-drop","template","builder","editor","email-marketing","email-template","html-email","mjml"
   ]
 }

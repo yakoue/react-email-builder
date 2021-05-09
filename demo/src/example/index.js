@@ -1,14 +1,14 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 
-import EmailEditor from "../../../src";
+import EmailBuilder from "../../../src";
 import sample from "./sample.js";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "./yakoue.png";
-const Editor = styled.div`
+const Builder = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -21,10 +21,8 @@ const Editor = styled.div`
 `;
 
 const Example = (props) => {
-  const emailEditorRef = useRef(null);
-
   const saveTemplate = () => {
-    emailEditorRef.current.instance.save((template) => {
+    this.instance.save((template) => {
       const { json, html } = template;
       console.log("saveTemplate", json);
       alert("Design JSON has been logged in your developer console.");
@@ -32,7 +30,7 @@ const Example = (props) => {
   };
 
   const exportHtml = () => {
-    emailEditorRef.current.instance.export((data) => {
+    this.instance.export((data) => {
       const { design, html } = data;
       console.log("exportHtml", html);
       alert("Output HTML has been logged in your developer console.");
@@ -43,9 +41,10 @@ const Example = (props) => {
     console.log("onLoad", data);
   };
 
-  const onLoad = (param) => {
-    param.addEvent("onLoad", onTemplateLoad);
-    param.setTemplate(sample);
+  const onLoad = (instance) => {
+    this.instance = instance;
+    this.instance.addEvent("onLoad", onTemplateLoad);
+    this.instance.setTemplate(sample);
   };
 
   return (
@@ -68,28 +67,14 @@ const Example = (props) => {
       </Row>
       <Row>
         <Col>
-          <Editor>
+          <Builder>
             <React.StrictMode>
-              <EmailEditor ref={emailEditorRef} onLoad={onLoad} />
+              <EmailBuilder onLoad={onLoad} />
             </React.StrictMode>
-          </Editor>
+          </Builder>
         </Col>
       </Row>
     </Container>
-    /*
-    <Container>
-      <Bar>
-        <h1>React Email Editor (Demo)</h1>
-
-        <button onClick={saveDesign}>Save Design</button>
-        <button onClick={exportHtml}>Export HTML</button>
-      </Bar>
-      <Editor>
-        <React.StrictMode>
-          <EmailEditor ref={emailEditorRef} onLoad={onLoad} />
-        </React.StrictMode>
-      </Editor>
-    </Container> */
   );
 };
 
