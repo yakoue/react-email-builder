@@ -70,6 +70,37 @@ const App = (props) => {
 
 render(<App />, document.getElementById('app'))
 ```
+# Methods
+
+| Method  | Param  | description |
+| -------------------------|------------------------|----------------------------|
+| **onLoad**   | Builder Instance | Callback function on builder load |
+| **setTemplate** | template | Take the template and load it to the builder |
+| **saveTemplate** | Function callback | Returns the design JSON  and HTML in a callback function|
+| **exportHtml**   | Function callback  | Returns the design HTML in a callback function |
+
+# Config
+
+**config** _object_ You can use this props to config and customize the builder---
+
+### Configuration Options
+---
+| Attribute                           | Required |                                                                                                                 |
+| :---------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------- |
+| **brand**<br/>_object_              | No       | This is the Brand Object from Yakoue. You can get it from the Brand settings page.                              |
+| **locale**<br/>_string_             | No       | This is the locale you want to load the editor in. We have many translations available. Learn more              |
+| **fusionTags**<br/> _object_        | No       | This is an array of objects. You can pass the merge tags and special links to display in the editor. Learn more |
+| **token**<br/>_string_              | No       | String token for authentication. It is required to enable user saved blocks.                                    |
+| **tools**<br/>_object_              | No       | These are the options for tools and custom tools. Learn more                                                    |
+| **blocks**<br/>_object_             | No       | This is an array of objects. You can pass custom blocks here. Learn more                                        |
+| **drows**<br/>_object_              | No       | This is an array of objects. You can pass custom rows (sections) here. Learn more                               |
+| **body**<br/>_object_               | No       | This objects to custom default template settings                                                                |
+| **editor** <br/>_object_            | No       | These are some editor options for different functions of the editor. Learn more                                 |
+| **fonts** <br/>_object_             | No       | You can pass custom fonts here. Learn More                                                                      |
+| **toolsDefaultValues**<br/>_object_ | No       | You can pass default tools properties here.                                                                     |
+| **loadSctratch** <br/>_boolean_     | No       | Custom JavaScript URL or source. Learn more                                                                     |
+| **callbacks** <br/>_array_          | No       | Array of callbacks functions                                                                                    |
+
 
 
 ### Customize configuration
